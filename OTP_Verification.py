@@ -13,9 +13,9 @@ class otp_verifier(Tk) :
         self.configure(bg = "#FFFFFF")
         self.resizable(False, False)
         self.n = str(self.OTP())
-        self.client = Client("ACc9bc34fa07102336a1791a2ac4ac7b29", "ee0dcfe341f504033ec851c5f8c65e2d")
+        self.client = Client("ACc9bc34fa07102336a1791a2ac4ac7b29", "aa233af89e420d53a0d4788e06503f40")
         self.client.messages.create(to=("+918851715010"),
-                                    from_="+18318513498",
+                                    from_="+17063096091",
                                     body = self.n
                                     )
         self.minuteString = StringVar()
@@ -66,9 +66,9 @@ class otp_verifier(Tk) :
 
     def resendOTP(self):
         self.n = str(self.OTP())
-        self.client = Client("ACc9bc34fa07102336a1791a2ac4ac7b29", "ee0dcfe341f504033ec851c5f8c65e2d")
+        self.client = Client("ACc9bc34fa07102336a1791a2ac4ac7b29", "aa233af89e420d53a0d4788e06503f40")
         self.client.messages.create(to=("+918851715010"),
-                                    from_="+18318513498",
+                                    from_="+17063096091",
                                     body=self.n)
 
     def checkOTP(self):
